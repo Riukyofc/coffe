@@ -44,7 +44,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const parsePrice = (priceStr) => {
-    return parseFloat(priceStr.replace('€', '').trim());
+    return parseFloat(priceStr.replace('R$', '').trim());
   };
 
   const cartTotal = cartItems.reduce(

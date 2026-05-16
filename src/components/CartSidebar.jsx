@@ -86,7 +86,7 @@ const CartSidebar = () => {
           <div className="p-6 border-t border-zinc-800 bg-[#0a0a0a]">
             <div className="flex justify-between text-white mb-6">
               <span className="font-light text-zinc-400 uppercase tracking-widest text-xs">Subtotal</span>
-              <span className="font-serif text-xl">€ {cartTotal.toFixed(2)}</span>
+              <span className="font-serif text-xl">R$ {cartTotal.toFixed(2)}</span>
             </div>
             <button 
               className="w-full bg-[#C5A059] text-black py-4 text-xs font-bold tracking-widest uppercase hover:bg-white transition-colors shadow-[0_0_20px_rgba(197,160,89,0.2)]"
