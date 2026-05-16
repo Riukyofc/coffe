@@ -5,7 +5,7 @@ const GiftingPage = () => (
     <div className="max-w-7xl mx-auto px-6">
       <div className="bg-[#1a1a1a] border border-zinc-800 p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center rounded-sm">
         <div className="w-full md:w-1/2 relative">
-           <img src="https://images.unsplash.com/photo-1608354580875-30bd4168b351?q=80&w=800&auto=format&fit=crop" className="w-full h-[500px] object-cover shadow-2xl" alt="Gift Box" />
+           <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1608354580875-30bd4168b351?q=80&w=800&auto=format&fit=crop" className="w-full h-[500px] object-cover shadow-2xl" alt="Gift Box" />
            <div className="absolute -bottom-6 -right-6 bg-[#C5A059] text-black p-6 rounded-sm shadow-xl hidden md:block">
              <p className="font-serif text-2xl">The Connoisseur <br/>Set</p>
            </div>

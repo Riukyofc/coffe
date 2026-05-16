@@ -1,8 +1,10 @@
 import { Search, ShoppingBag, User, Sparkles } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
 const Navbar = ({ currentPage, setCurrentPage }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { cartCount, setIsCartOpen } = useContext(CartContext);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -49,10 +51,17 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
           <button className="text-zinc-300 hover:text-[#C5A059] transition-transform duration-300 hover:scale-110">
             <User size={20} strokeWidth={1.5} />
           </button>
-          <button className="text-[#C5A059] hover:text-[#d4b06a] transition-all duration-300 relative flex items-center gap-2 group hover:scale-105">
+          <button 
+            onClick={() => setIsCartOpen(true)}
+            className="text-[#C5A059] hover:text-[#d4b06a] transition-all duration-300 relative flex items-center gap-2 group hover:scale-105"
+          >
             <ShoppingBag size={20} strokeWidth={1.5} />
             <span className="hidden sm:block text-xs font-medium tracking-widest uppercase">Cart</span>
-            <span className="absolute -top-2 -right-2 bg-[#C5A059] text-black text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center group-hover:bg-white transition-colors">0</span>
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-[#C5A059] text-black text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center group-hover:bg-white transition-colors animate-fade-in-up">
+                {cartCount}
+              </span>
+            )}
           </button>
         </div>
       </div>

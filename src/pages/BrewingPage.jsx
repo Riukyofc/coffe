@@ -13,7 +13,7 @@ const BrewingPage = () => (
         ].map((method, idx) => (
           <div key={idx} className="bg-[#121212] p-6 border border-zinc-800 hover:border-[#C5A059] transition-colors cursor-pointer group">
             <div className="h-48 overflow-hidden mb-6 relative">
-              <img src={method.img} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt={method.title} />
+              <img loading="lazy" src={method.img} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt={method.title} />
               <div className="absolute inset-0 bg-black/50 group-hover:bg-black/20 transition-colors duration-500"></div>
             </div>
             <div className="flex justify-between items-end">

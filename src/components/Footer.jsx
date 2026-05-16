@@ -1,6 +1,7 @@
 import { Sparkles } from 'lucide-react';
+import { memo } from 'react';
 
-const Footer = ({ setCurrentPage }) => (
+const Footer = memo(({ setCurrentPage }) => (
   <footer className="border-t border-zinc-900 bg-[#050505] py-16 px-6">
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
       <button onClick={() => setCurrentPage('home')} className="font-serif text-2xl tracking-wide text-white flex items-center gap-2">
@@ -17,6 +18,6 @@ const Footer = ({ setCurrentPage }) => (
       </p>
     </div>
   </footer>
-);
+));
 
 export default Footer;

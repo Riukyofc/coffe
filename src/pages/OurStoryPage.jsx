@@ -4,7 +4,7 @@ const OurStoryPage = () => (
       <p className="text-[#C5A059] text-xs font-medium tracking-[0.2em] uppercase">The Origins</p>
       <h1 className="font-serif text-5xl md:text-7xl text-white mb-12">Born in the Shadows.</h1>
       <div className="aspect-video w-full overflow-hidden rounded-sm mb-16 relative">
-        <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1200&auto=format&fit=crop" alt="Coffee Farm" className="w-full h-full object-cover opacity-80" />
+        <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1200&auto=format&fit=crop" alt="Coffee Farm" className="w-full h-full object-cover opacity-80" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent"></div>
       </div>
       <div className="space-y-6 text-zinc-400 font-light text-lg leading-relaxed text-left md:text-center max-w-3xl mx-auto">

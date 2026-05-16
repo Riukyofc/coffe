@@ -12,7 +12,7 @@ const HomePage = ({ setPage }) => (
         <div className="w-full md:w-1/2 relative group animate-fade-in-up delay-100">
           <div className="absolute inset-0 bg-[#C5A059] blur-3xl opacity-10 rounded-full group-hover:opacity-25 transition-opacity duration-1000" />
           <div className="relative h-[500px] lg:h-[700px] w-full overflow-hidden rounded-sm animate-float">
-            <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=1200&auto=format&fit=crop" alt="Coffee" className="w-full h-full object-cover object-center scale-[1.02] group-hover:scale-105 transition-transform duration-[2000ms] ease-out shadow-2xl" />
+            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=1200&auto=format&fit=crop" alt="Coffee" className="w-full h-full object-cover object-center scale-[1.02] group-hover:scale-105 transition-transform duration-[2000ms] ease-out shadow-2xl" />
             <div className="absolute inset-0 border border-[#C5A059]/20 m-4 pointer-events-none transition-all duration-700 group-hover:m-6" />
           </div>
         </div>

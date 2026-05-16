@@ -11,7 +11,7 @@ const CollectionsPage = () => (
       {/* Collection 1 */}
       <div className="flex flex-col md:flex-row gap-12 items-center group">
         <div className="w-full md:w-1/2 h-[400px] overflow-hidden rounded-sm relative">
-          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Midnight Series" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Midnight Series" />
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
         </div>
         <div className="w-full md:w-1/2 space-y-6">
@@ -26,7 +26,7 @@ const CollectionsPage = () => (
       {/* Collection 2 */}
       <div className="flex flex-col md:flex-row-reverse gap-12 items-center group">
         <div className="w-full md:w-1/2 h-[400px] overflow-hidden rounded-sm relative">
-          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Dawn Reserve" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" alt="Dawn Reserve" />
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
         </div>
         <div className="w-full md:w-1/2 space-y-6">
