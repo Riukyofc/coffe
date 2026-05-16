@@ -8,7 +8,7 @@ const BrewingPage = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           { title: "Espresso", time: "25-30 Sec", img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600" },
-          { title: "Pour Over", time: "3-4 Min", img: "https://images.unsplash.com/photo-1495474472201-411db18f1e07?q=80&w=600" },
+          { title: "Pour Over", time: "3-4 Min", img: "https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=600" },
           { title: "French Press", time: "4-5 Min", img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=600" }
         ].map((method, idx) => (
           <div key={idx} className="bg-[#121212] p-6 border border-zinc-800 hover:border-[#C5A059] transition-colors cursor-pointer group">
